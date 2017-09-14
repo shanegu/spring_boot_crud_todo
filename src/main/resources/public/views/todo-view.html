@@ -1,0 +1,31 @@
+<div class="container pad-top">
+  <table class="table todotable">
+      <tr>
+          <td><h3>Details for {{todo.name}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Name</td>
+          <td>{{todo.name}}</td>
+      </tr>
+      <tr>
+          <td>Description</td>
+          <td>{{todo.description}}</td>
+      </tr>
+      <tr>
+          <td>Date Created</td>
+          <td>{{todo.dateCreated}}</td>
+      </tr>
+      <tr>
+          <td>Priority</td>
+          <td>{{todo.priority}}</td>
+      </tr>
+      <tr>
+          <td>Completed</td>
+          <td>{{todo.completed}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editTodo({id:todo.id})">Edit</a>
+  </div>
+</div>

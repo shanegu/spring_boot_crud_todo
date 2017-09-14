@@ -1,0 +1,18 @@
+<div class="container pad-top">
+  <a ui-sref="newTodo" class="btn-primary btn-lg nodecoration">Add New Todo</a>
+  <table class="table todotable">
+      <tr>
+          <td><h3>All Todos</h3></td>
+          <td></td>
+      </tr>
+      <tr ng-repeat="todo in todos">
+          <td>{{todo.name}}</td>
+          <td>{{todo.description}}</td>
+          <td>{{todo.dateCreated}}</td>
+          <td>
+              <a class="btn btn-primary" ui-sref="viewTodo({id:todo.id})">View</a>
+              <a class="btn btn-danger"  ng-click="deleteTodo(todo)">Delete</a>
+          </td>
+      </tr>
+  </table>
+</div>
